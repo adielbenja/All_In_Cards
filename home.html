@@ -1,0 +1,75 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>All in Cards</title>
+    <meta name="description" content="All in Cards" />
+    <meta name="keywords" content="רב ברירה, תרגול, משחק לימודי, משחק, קלפים, היסטוריה ישראלית, תזונה" />
+    <meta name="author" content="Adiel Brnjamin, Chen Navon" />
+
+    <!-- CSS -->
+
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <!--jQuery library-->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <!--הקוד שמפעיל את תפריט הניווט-->
+    <script src="jScripts/myScript.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <!--קישור לדף עצמו כדי להתחיל את המשחק מחדש בלחיצה על הלוגו-->
+
+            <a href="home.html">
+                <img id="logo" src="webimag/logo.png"/>
+                <p id="gameName">ALL IN CARDS</p>
+            </a>
+            <!--תפריט הניווט בראש העמוד-->
+            <nav>
+                <ul>
+                    <li><a class="about">אודות</a></li>
+                    <li><a class="howToPlay">איך משחקים?</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="aboutDiv" class="popUp bounceInDown hide">
+            <a class="closeAbout">X</a>
+            <h2> אודות </h2>
+            <img id="bigLogo" src="webimag/logo.png" />
+            <p id="gmName">ALL IN CARDS</p>
+
+            <p>אפיון ופיתוח: חן נבון ועדיאל בנימין</p>
+            <p>אופיין ופותח במסגרת פרוייקט בקורסים:</p>
+            <p>סביבות לימוד אינטרקאקטיביות 1+ תכנות אינטראקטיבי 1</p>
+
+            <p>תש"פ</p>
+            <div id="hit">
+                <img id="logoHit" src="webimag/hit.png" />
+                <div id="machon">
+                    <a href="https://www.hit.ac.il/telem/overview">הפקולטה לטכנולוגיות למידה</a>
+                    <p>מכון טכנולגי חולון</p>
+                </div>
+            </div>
+
+        </div>
+        <div id="howToPlayDiv" class="popUp bounceInDown hide">
+            <a class="closeHowToPlay">X</a>
+            <p>לפניכם מוצגות שאלות רב ברירה, מסיחי השאלה הם הקלפים</p>
+            <p>על כל שחקן בתורו לגרור את התשובות הנכונות אל מרכז השלחן, וכשהוא סבור שכולן בפנים ללחוץ על סיימתי</p>
+            <img id="imgInfo" src="webimag/info.png" />
+        </div>
+
+        <div id="gameArea" class="">
+            <!--src = הקישור של דף המשחק שלכם (לא קובץ האנימייט)-->
+            <iframe id="gameIframe" src="V28.html" frameBorder="0" allowfullscreen="">Browser not compatible.</iframe>
+        </div>
+    </div>
+</body>
+
+</html>
